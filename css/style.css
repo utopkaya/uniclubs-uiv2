@@ -1,0 +1,432 @@
+/* resets */
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif; }
+
+body {
+  background-color: #fff; }
+
+.main {
+  margin: 0rem 8rem 10rem 8rem; }
+
+.headerInfo {
+  padding: 5px;
+  background: linear-gradient(to right, #5B26F4, #BE26F4);
+  display: flex;
+  justify-content: end; }
+  .headerInfo p {
+    color: #fff;
+    font-size: .75rem;
+    font-weight: 200;
+    font-style: italic;
+    margin-right: 8rem; }
+  .headerInfo b {
+    font-weight: 300; }
+
+.header {
+  margin: 3rem 0rem; }
+  .header .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .header .menu .logo img {
+      width: 150px; }
+    .header .menu .menuLinks a {
+      font-size: .80rem;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 300;
+      color: #444;
+      padding: 0px 14px;
+      transition: color .2s; }
+      .header .menu .menuLinks a:hover {
+        color: #000; }
+      .header .menu .menuLinks a:last-child {
+        background-color: rgba(238, 238, 238, 0.62);
+        padding: 5px 12px;
+        border-radius: 2px;
+        transition: all .2s; }
+        .header .menu .menuLinks a:last-child:hover {
+          background-color: #39179d;
+          color: #fff;
+          border: none; }
+    .header .menu .menuLinks #passive {
+      opacity: 0.3 !important;
+      cursor: not-allowed; }
+    .header .menu #active {
+      font-weight: 500; }
+    .header .menu .hamburgerMenu {
+      display: none; }
+
+.homePageOverview {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .homePageOverview .textOverview {
+    margin-top: 6rem;
+    width: 45%; }
+    .homePageOverview .textOverview h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.50rem;
+      font-weight: 900; }
+    .homePageOverview .textOverview p {
+      margin-top: 1rem;
+      font-family: 'Montserrat', sans-serif; }
+    .homePageOverview .textOverview #subsribeInfo {
+      font-size: .75rem;
+      font-style: italic;
+      color: #666;
+      width: 80%; }
+    .homePageOverview .textOverview .subsribesBox {
+      margin-top: 2rem; }
+      .homePageOverview .textOverview .subsribesBox input {
+        width: 300px;
+        height: 50px;
+        padding: 0px 100px 0px 10px;
+        outline: none;
+        border: 3px solid #411bb3;
+        border-radius: 4px;
+        box-shadow: 3px 3px 0px #5B26F4;
+        transition: width .3s; }
+        .homePageOverview .textOverview .subsribesBox input:focus {
+          width: 340px; }
+      .homePageOverview .textOverview .subsribesBox button {
+        margin-left: -100px;
+        border: none;
+        background-color: #411bb3;
+        color: #fff;
+        padding: 9px 12px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.4s; }
+        .homePageOverview .textOverview .subsribesBox button:hover {
+          background-color: #39179d; }
+  .homePageOverview .imageOverview img {
+    width: 500px; }
+
+.footerContainer {
+  background-color: #5B26F4;
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 4rem 8rem 3rem 8rem; }
+  .footerContainer .left .logo img {
+    width: 100px; }
+  .footerContainer .left .subsribesBox {
+    margin-top: 2rem; }
+    .footerContainer .left .subsribesBox input {
+      width: 300px;
+      height: 50px;
+      padding: 0px 100px 0px 10px;
+      outline: none;
+      border: 3px solid #000;
+      border-radius: 4px;
+      box-shadow: 5px 5px 0px #000;
+      font-weight: 500; }
+    .footerContainer .left .subsribesBox button {
+      margin-left: -100px;
+      border: none;
+      background-color: #000;
+      color: #fff;
+      padding: 9px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.4s; }
+      .footerContainer .left .subsribesBox button:hover {
+        background-color: #39179d; }
+  .footerContainer .left .surveillance {
+    margin-top: 3rem; }
+    .footerContainer .left .surveillance p {
+      font-size: 0.75rem; }
+    .footerContainer .left .surveillance a {
+      color: #fff;
+      text-decoration: underline;
+      font-size: .65rem;
+      float: right; }
+  .footerContainer .right .menu {
+    display: flex; }
+    .footerContainer .right .menu .footerLeftMenu,
+    .footerContainer .right .menu .footerRightMenu {
+      margin: 0rem 0rem 0rem 3rem; }
+      .footerContainer .right .menu .footerLeftMenu li,
+      .footerContainer .right .menu .footerRightMenu li {
+        margin: 1.4rem 0rem;
+        font-size: 12px; }
+        .footerContainer .right .menu .footerLeftMenu li a,
+        .footerContainer .right .menu .footerRightMenu li a {
+          color: #fff;
+          font-weight: 200; }
+  .footerContainer .right .socialLinks {
+    float: right;
+    margin-top: 2rem;
+    display: block; }
+    .footerContainer .right .socialLinks a {
+      padding: 0rem 0rem 0rem 1rem;
+      color: #fff; }
+      .footerContainer .right .socialLinks a i {
+        font-size: 1.5rem; }
+
+.text-focus-in {
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
+
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@media screen and (max-width: 1300px) {
+  .menuLinks,
+  .headerButtons {
+    display: none; }
+  .hamburgerMenu {
+    display: block !important; }
+    .hamburgerMenu i {
+      font-size: 2rem;
+      color: #5B26F4; }
+  .homePageOverview {
+    flex-direction: column-reverse;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    .homePageOverview .imageOverview {
+      width: 100%; }
+      .homePageOverview .imageOverview img {
+        max-width: 100%; }
+    .homePageOverview .textOverview {
+      width: 100%;
+      margin-top: 1rem !important; }
+  .footerContainer {
+    flex-direction: column; }
+  .aboutHeader {
+    width: 100%; } }
+
+@media screen and (max-width: 750px) {
+  .headerInfo {
+    display: none; }
+  .main {
+    margin: 0rem 5rem 10rem 5rem; }
+  .subsribesBox {
+    width: 100%; }
+  .aboutHeader {
+    width: 100%; } }
+
+@media screen and (max-width: 600px) {
+  .subsribesBox {
+    width: 100%; }
+    .subsribesBox input {
+      box-sizing: border-box; }
+  .aboutHeader {
+    width: 100%; } }
+
+@media screen and (max-width: 575px) {
+  .textOverview h1 {
+    font-size: 2rem !important; }
+  .aboutHeader {
+    width: 100%; } }
+
+.ads {
+  width: 100%;
+  height: 100px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .ads .adsFrame {
+    width: 728px;
+    background-color: #e6e6e66b;
+    height: 79px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.about {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 8rem; }
+  .about .aboutHeader {
+    width: 70%; }
+    .about .aboutHeader h1 {
+      font-size: 3rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      color: #000; }
+      .about .aboutHeader h1 span:first-child {
+        color: #5B26F4; }
+      .about .aboutHeader h1 span:last-child {
+        color: #5B26F4; }
+  .about .aboutInfoContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 8rem; }
+    .about .aboutInfoContainer .box {
+      width: 250px; }
+      .about .aboutInfoContainer .box img {
+        width: 100%;
+        height: 180px; }
+      .about .aboutInfoContainer .box h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500; }
+      .about .aboutInfoContainer .box p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: .75rem;
+        margin-top: 1rem; }
+  .about .whatICanDo {
+    margin: 8rem 0rem 5rem 0rem;
+    width: 80%; }
+    .about .whatICanDo h1 {
+      font-weight: 300; }
+  .about .uniclubsAdvantages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between !important;
+    width: 100%; }
+    .about .uniclubsAdvantages .leftAdvantage .box {
+      width: 90%;
+      padding: 20px;
+      border: 1px solid #E6E6E6;
+      border-radius: 10px;
+      font-size: .85rem;
+      display: flex;
+      justify-content: space-between;
+      margin: 3rem 0rem;
+      height: 90px;
+      align-items: center; }
+      .about .uniclubsAdvantages .leftAdvantage .box .content {
+        text-align: left;
+        width: 400px; }
+        .about .uniclubsAdvantages .leftAdvantage .box .content h3 {
+          font-weight: 500; }
+        .about .uniclubsAdvantages .leftAdvantage .box .content p {
+          margin-top: .50rem; }
+      .about .uniclubsAdvantages .leftAdvantage .box .image img {
+        width: 90px;
+        padding-left: 1rem; }
+    .about .uniclubsAdvantages .rightAdvantage .box {
+      width: 90%;
+      padding: 20px;
+      border: 1px solid #E6E6E6;
+      border-radius: 10px;
+      font-size: .85rem;
+      display: flex;
+      justify-content: space-between;
+      margin: 3rem 0rem;
+      height: 90px;
+      align-items: center; }
+      .about .uniclubsAdvantages .rightAdvantage .box .content {
+        text-align: left;
+        width: 400px; }
+        .about .uniclubsAdvantages .rightAdvantage .box .content h3 {
+          font-weight: 500; }
+        .about .uniclubsAdvantages .rightAdvantage .box .content p {
+          margin-top: .50rem; }
+      .about .uniclubsAdvantages .rightAdvantage .box .image img {
+        width: 90px;
+        padding-left: 1rem; }
+  .about .aboutVideo {
+    margin-top: 3rem; }
+    .about .aboutVideo .videoFrame {
+      border: 3px solid #5B26F4;
+      width: 800px;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px; }
+      .about .aboutVideo .videoFrame i {
+        font-size: 4rem;
+        color: #5B26F4;
+        cursor: pointer; }
+
+.contact {
+  margin-top: 8rem; }
+  .contact .contactForm div input, .contact .contactForm div select {
+    border: 1px solid #ddd;
+    width: 450px;
+    height: 60px;
+    box-sizing: border-box;
+    padding-left: 1rem;
+    outline: none;
+    margin: 0.5rem 0rem;
+    border-radius: 4px;
+    transition: border-color .4s; }
+    .contact .contactForm div input:focus, .contact .contactForm div select:focus {
+      border-color: black; }
+  .contact .contactForm div textarea {
+    border: 1px solid #ddd;
+    width: 450px;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition: border-color .4s;
+    outline: none;
+    resize: none; }
+    .contact .contactForm div textarea:focus {
+      border-color: black; }
+  .contact .contactForm div button {
+    width: 450px;
+    height: 60px;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: #5B26F4;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 4px;
+    transition: background-color .4s;
+    margin-top: 1rem; }
+    .contact .contactForm div button:hover {
+      background-color: #411bb3; }
+    .contact .contactForm div button:focus {
+      background-color: #39179d; }
